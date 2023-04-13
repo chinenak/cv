@@ -1,0 +1,302 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 300;
+	color: #444;
+}
+
+/* GENERAL */
+.heading__primary {
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 0.6rem 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.8rem;
+	background: linear-gradient(45deg, #0b7285, #15aabf);
+	color: #e7f5ff;
+
+	display: flex;
+	align-items: center;
+}
+
+.icons_section {
+	height: 2.2rem;
+	width: 2.2rem;
+}
+
+.icons_info {
+	height: 1.6rem;
+	width: 1.6rem;
+	margin-right: 1rem;
+}
+
+figcaption {
+	font-size: 1.4rem;
+	font-style: italic;
+	text-align: right;
+	margin-right: 3.2rem;
+}
+
+/* HEADER */
+.header {
+	font-size: 1.2rem;
+	padding: 3.2rem 1.2rem;
+	background-color: #e3fafc;
+}
+
+.nav {
+	height: 4.8rem;
+	width: 100%;
+	border-bottom: 1px solid #c5f6fa;
+	margin-bottom: 3.2rem;
+}
+
+.nav__links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.nav__item {
+	margin-right: 2.4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+	color: #0b7285;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s;
+}
+
+.section__link:link,
+.section__link:visited {
+	color: inherit;
+	transition: all 0.3s;
+}
+
+.section__link:hover,
+.section__link:active {
+	color: #22b8cf;
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+	background-color: #22b8cf;
+	color: #e7f5ff;
+	padding: 0.4rem 2rem;
+	border-radius: 3rem;
+	transition: all, 0.3s;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+	color: #e7f5ff;
+	opacity: 0.8;
+}
+
+.header__info {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.info__img {
+	width: 30%;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.info__detail {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr;
+	column-gap: 2.4rem;
+
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	padding: 1.6rem;
+	background-color: #0b7285;
+	color: #e7f5ff;
+	line-height: 1.6;
+}
+
+.info__detail span {
+	display: flex;
+	align-items: center;
+}
+
+/* SECTION */
+.section {
+	font-size: 1.4rem;
+	padding: 3.2rem 1.2rem;
+	margin: 0 auto;
+	transition: all, 0.3s;
+}
+
+.section--hidden {
+	opacity: 0;
+	transform: translateY(15rem);
+}
+
+.timeline {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.timeline > li {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 3.2rem;
+}
+
+.timeline-date {
+	flex-basis: 13rem;
+}
+
+.timeline-content {
+	border-left: 0.4rem #e3fafc solid;
+	padding-left: 3.2rem;
+	position: relative;
+}
+
+.timeline-content:before {
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: #1098ad;
+	position: absolute;
+	left: -8px;
+	top: 0.7rem;
+	border-radius: 100%;
+}
+
+/* SECTION PR */
+.pr__content {
+	position: relative;
+	margin: 0 auto;
+	padding: 4.8rem 0;
+}
+
+.pr__content::before {
+	content: '\201C';
+	position: absolute;
+	top: 0rem;
+	left: -1.6rem;
+	line-height: 1;
+	font-size: 16rem;
+	font-family: inherit;
+	color: #1098ad;
+}
+
+.pr__content::after {
+	content: '\201D';
+	position: absolute;
+	bottom: -10rem;
+	right: -1.6rem;
+	line-height: 1;
+	font-size: 16rem;
+	font-family: inherit;
+	color: #1098ad;
+}
+
+.pr__quote {
+	margin-top: 1.8rem;
+	padding: 0 3.2rem;
+	text-indent: 2.4rem;
+}
+
+/* FOOTER */
+.copyright {
+	border-top: 1px solid #c5f6fa;
+	padding-top: 1.6rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	/* GENERAL */
+	.heading__primary {
+		font-size: 2rem;
+		padding: 0.6rem 1.6rem;
+	}
+
+	.icons_section {
+		height: 2.2rem;
+		width: 2.2rem;
+	}
+
+	.icons_info {
+		height: 1.8rem;
+		width: 1.8rem;
+	}
+
+	/* HEADER */
+	.header {
+		font-size: 1.6rem;
+		padding: 3.2rem 1.4rem;
+	}
+
+	.nav {
+		height: 6rem;
+	}
+
+	.nav__item {
+		margin-right: 2.4rem;
+	}
+
+	.nav__link:link,
+	.nav__link:visited {
+		font-size: 1.7rem;
+	}
+
+	.section__link:link,
+	.section__link:visited {
+		font-size: 1.6rem;
+	}
+
+	.info__img {
+		width: 20%;
+	}
+
+	.info__detail {
+		column-gap: 4.8rem;
+		line-height: 1.8;
+		padding: 1.6rem 2.4rem;
+	}
+
+	/* SECTION */
+	.section {
+		font-size: 1.6rem;
+		padding: 4.8rem;
+	}
+
+	.timeline {
+		list-style: none;
+		max-width: 76.8rem;
+		margin: 0 auto;
+	}
+
+	.timeline-date {
+		flex-basis: 15rem;
+	}
+
+	/* SECTION PR */
+	.pr__content {
+		max-width: 64rem;
+	}
+
+	/* FOOTER */
+	.copyright {
+		font-size: 1.4rem;
+		border-top: 1px solid #c5f6fa;
+	}
+}
